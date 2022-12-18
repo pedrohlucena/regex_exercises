@@ -10,6 +10,7 @@ os.chdir(
 
 with open(os.path.join('.', 'data.txt'), 'r', encoding='utf8') as f:
     data = f.read()
+    print(data)
     
     # 1- Statement
     match = re.findall(
