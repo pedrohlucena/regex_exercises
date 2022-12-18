@@ -10,6 +10,7 @@ os.chdir(
 
 with open(os.path.join('.', 'bookshelf.txt'), 'r', encoding='utf8') as f:
     bookshelf_text = f.read()
+    print(bookshelf_text)
     
     # 1- Match all the books that have your name longer than 25 characters
     book_names_longer_than_25_characters = re.findall(
