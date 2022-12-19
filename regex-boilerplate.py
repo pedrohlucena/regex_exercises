@@ -10,13 +10,11 @@ os.chdir(
 
 with open(os.path.join('.', 'data.txt'), 'r', encoding='utf8') as f:
     data = f.read()
-    print(data)
+    print(data,'\n')
     
     # 1- Statement
     match = re.findall(
-        r"""
-            # some regex pattern here
-        """, 
-        data, flags=re.VERBOSE
+        r'', 
+        data
     )
     print(match)
